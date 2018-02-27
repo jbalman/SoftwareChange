@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Implementations")]
+[assembly: AssemblyTitle("RickAndMorty.Contracts")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Implementations")]
+[assembly: AssemblyProduct("RickAndMorty.Contracts")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("e03b5c13-817d-4510-8820-7e1524a61da7")]
+[assembly: Guid("6eec5b7c-82dc-457b-9d9d-98b537e662ed")]
 
 // Version information for an assembly consists of the following four values:
 //

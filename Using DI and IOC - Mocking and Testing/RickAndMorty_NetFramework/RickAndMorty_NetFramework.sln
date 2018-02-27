@@ -1,19 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RickAndMorty", "RickAndMorty\RickAndMorty.csproj", "{CB3BA3F8-445C-4EF1-84FF-DF9C2E87EC75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{6EEC5B7C-82DC-457B-9D9D-98B537E662ED}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Hosts", "1-Hosts", "{D8B7C5C6-1C32-4863-831B-0810417661E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Implementations", "Implementations\Implementations.csproj", "{E03B5C13-817D-4510-8820-7E1524A61DA7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Tests", "3-Tests", "{0CADCDBF-0DC7-4FF3-A859-FB9DA4C0B560}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engines", "Engines\Engines.csproj", "{F2454BBC-72BC-44A4-A7A6-590E43F3BFCC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RickAndMorty.Tests", "RickAndMortyTests\RickAndMorty.Tests.csproj", "{776FF888-8859-45F6-826E-00A95BEEFB52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{969E7DF8-BBD1-4A04-8C0E-975443DAE57D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Application", "2-Application", "{87FC54FB-C12C-4B5B-A8B0-FD48CD8629FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RickAndMortyTests", "RickAndMortyTests\RickAndMortyTests.csproj", "{776FF888-8859-45F6-826E-00A95BEEFB52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RickAndMorty.Contracts", "RickAndMorty.Contracts\RickAndMorty.Contracts.csproj", "{6EEC5B7C-82DC-457B-9D9D-98B537E662ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RickAndMorty.Engines", "RickAndMorty.Engines\RickAndMorty.Engines.csproj", "{F2454BBC-72BC-44A4-A7A6-590E43F3BFCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RickAndMorty.Implementations", "RickAndMorty.Implementations\RickAndMorty.Implementations.csproj", "{E03B5C13-817D-4510-8820-7E1524A61DA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RickAndMorty.Services", "RickAndMorty.Services\RickAndMorty.Services.csproj", "{969E7DF8-BBD1-4A04-8C0E-975443DAE57D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,29 +31,37 @@ Global
 		{CB3BA3F8-445C-4EF1-84FF-DF9C2E87EC75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB3BA3F8-445C-4EF1-84FF-DF9C2E87EC75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB3BA3F8-445C-4EF1-84FF-DF9C2E87EC75}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6EEC5B7C-82DC-457B-9D9D-98B537E662ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6EEC5B7C-82DC-457B-9D9D-98B537E662ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6EEC5B7C-82DC-457B-9D9D-98B537E662ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6EEC5B7C-82DC-457B-9D9D-98B537E662ED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E03B5C13-817D-4510-8820-7E1524A61DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E03B5C13-817D-4510-8820-7E1524A61DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E03B5C13-817D-4510-8820-7E1524A61DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E03B5C13-817D-4510-8820-7E1524A61DA7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F2454BBC-72BC-44A4-A7A6-590E43F3BFCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F2454BBC-72BC-44A4-A7A6-590E43F3BFCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F2454BBC-72BC-44A4-A7A6-590E43F3BFCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F2454BBC-72BC-44A4-A7A6-590E43F3BFCC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{969E7DF8-BBD1-4A04-8C0E-975443DAE57D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{969E7DF8-BBD1-4A04-8C0E-975443DAE57D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{969E7DF8-BBD1-4A04-8C0E-975443DAE57D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{969E7DF8-BBD1-4A04-8C0E-975443DAE57D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{776FF888-8859-45F6-826E-00A95BEEFB52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{776FF888-8859-45F6-826E-00A95BEEFB52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{776FF888-8859-45F6-826E-00A95BEEFB52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{776FF888-8859-45F6-826E-00A95BEEFB52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EEC5B7C-82DC-457B-9D9D-98B537E662ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EEC5B7C-82DC-457B-9D9D-98B537E662ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EEC5B7C-82DC-457B-9D9D-98B537E662ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EEC5B7C-82DC-457B-9D9D-98B537E662ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2454BBC-72BC-44A4-A7A6-590E43F3BFCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2454BBC-72BC-44A4-A7A6-590E43F3BFCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2454BBC-72BC-44A4-A7A6-590E43F3BFCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2454BBC-72BC-44A4-A7A6-590E43F3BFCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E03B5C13-817D-4510-8820-7E1524A61DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E03B5C13-817D-4510-8820-7E1524A61DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E03B5C13-817D-4510-8820-7E1524A61DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E03B5C13-817D-4510-8820-7E1524A61DA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{969E7DF8-BBD1-4A04-8C0E-975443DAE57D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{969E7DF8-BBD1-4A04-8C0E-975443DAE57D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{969E7DF8-BBD1-4A04-8C0E-975443DAE57D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{969E7DF8-BBD1-4A04-8C0E-975443DAE57D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CB3BA3F8-445C-4EF1-84FF-DF9C2E87EC75} = {D8B7C5C6-1C32-4863-831B-0810417661E7}
+		{776FF888-8859-45F6-826E-00A95BEEFB52} = {0CADCDBF-0DC7-4FF3-A859-FB9DA4C0B560}
+		{6EEC5B7C-82DC-457B-9D9D-98B537E662ED} = {87FC54FB-C12C-4B5B-A8B0-FD48CD8629FD}
+		{F2454BBC-72BC-44A4-A7A6-590E43F3BFCC} = {87FC54FB-C12C-4B5B-A8B0-FD48CD8629FD}
+		{E03B5C13-817D-4510-8820-7E1524A61DA7} = {87FC54FB-C12C-4B5B-A8B0-FD48CD8629FD}
+		{969E7DF8-BBD1-4A04-8C0E-975443DAE57D} = {87FC54FB-C12C-4B5B-A8B0-FD48CD8629FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D531ACC7-F76A-4824-BF8E-120938377AD8}
