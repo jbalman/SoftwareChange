@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Contracts
+namespace RickAndMorty.Contracts
 {
     public interface ILocation
     {

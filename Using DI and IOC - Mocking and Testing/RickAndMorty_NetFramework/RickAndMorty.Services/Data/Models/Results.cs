@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Repositories.API
+namespace RickAndMorty.Services.Data.Models
 {
     public class Results<T>
     {

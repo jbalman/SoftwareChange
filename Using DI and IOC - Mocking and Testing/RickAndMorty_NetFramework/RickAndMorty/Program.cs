@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Ninject;
+using RickAndMorty.Contracts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +12,8 @@ namespace RickAndMorty
     {
         static void Main(string[] args)
         {
+            StandardKernel Kernel = new StandardKernel(new BindingModule());
+            IDataService svc = Kernel.Get<IDataService>();
         }
     }
 }

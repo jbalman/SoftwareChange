@@ -1,4 +1,4 @@
-﻿namespace Repositories.API
+﻿namespace RickAndMorty.Services.Data.Models
 {
     public class Info
     {

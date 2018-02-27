@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Contracts
+namespace RickAndMorty.Contracts
 {
     public interface ICharacter
     {
@@ -14,7 +11,7 @@ namespace Contracts
         string species { get; set; }
         string type { get; set; }
         string gender { get; set; }
-        IOrigin origin { get; set; }
+        ILocation origin { get; set; }
         ILocation location { get; set; }
         Uri image { get; set; }
         IEnumerable<IEpisode> episodes { get; set; }

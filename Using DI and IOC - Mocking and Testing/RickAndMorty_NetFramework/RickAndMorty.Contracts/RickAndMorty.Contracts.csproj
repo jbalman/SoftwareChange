@@ -41,10 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ICharacter.cs" />
+    <Compile Include="IConfigurationService.cs" />
     <Compile Include="IEpisode.cs" />
     <Compile Include="ILocation.cs" />
-    <Compile Include="IOrigin.cs" />
-    <Compile Include="IRickAndMortyRepo.cs" />
+    <Compile Include="IDataService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

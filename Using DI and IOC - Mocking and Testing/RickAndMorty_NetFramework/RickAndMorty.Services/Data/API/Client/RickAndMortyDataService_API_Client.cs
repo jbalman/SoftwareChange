@@ -1,17 +1,18 @@
 ﻿using Newtonsoft.Json;
-using System.Collections;
+using RickAndMorty.Services.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
 
-namespace Repositories.API
+namespace RickAndMorty.Services.Data.Api.Client
 {
-    public class RickAndMorty_APIClient
+    public class RickAndMortyDataService_API_Client
     {
-        string _rootApiUrl; // "https://rickandmortyapi.com/api";
+        string _rootApiUrl;
 
         private Resources _resources;
-        public Resources Resources
+        private Resources Resources
         {
             get
             {
@@ -21,22 +22,11 @@ namespace Repositories.API
             }
         }
 
-        public RickAndMorty_APIClient(string RootApiUrl)
+        public RickAndMortyDataService_API_Client(string RootApiUrl)
         {
             _rootApiUrl = RootApiUrl;
         }
 
-        public Resources GetResources()
-        {
-            WebRequest req = WebRequest.Create(_rootApiUrl);
-            req.Method = "GET";
-            WebResponse resp = req.GetResponse();
-            using (StreamReader sr = new StreamReader(resp.GetResponseStream()))
-            {
-                string respBody = sr.ReadToEnd();
-                return JsonConvert.DeserializeObject<Resources>(respBody);
-            }
-        }
 
         public IEnumerable<Character> GetCharacters()
         {
@@ -57,6 +47,7 @@ namespace Repositories.API
             string nextUrl = url;
             while (!string.IsNullOrWhiteSpace(nextUrl))
             {
+                Console.WriteLine($"Geting {nextUrl}");
                 WebRequest req = WebRequest.Create(nextUrl);
                 req.Method = "GET";
                 WebResponse resp = req.GetResponse();
@@ -69,6 +60,17 @@ namespace Repositories.API
                 }
             }
             return objects;
+        }
+        private Resources GetResources()
+        {
+            WebRequest req = WebRequest.Create(_rootApiUrl);
+            req.Method = "GET";
+            WebResponse resp = req.GetResponse();
+            using (StreamReader sr = new StreamReader(resp.GetResponseStream()))
+            {
+                string respBody = sr.ReadToEnd();
+                return JsonConvert.DeserializeObject<Resources>(respBody);
+            }
         }
     }
 }
