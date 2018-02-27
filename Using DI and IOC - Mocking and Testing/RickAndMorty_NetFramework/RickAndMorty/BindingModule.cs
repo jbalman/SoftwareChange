@@ -2,7 +2,6 @@
 using RickAndMorty.Contracts;
 using RickAndMorty.Implementations;
 using RickAndMorty.Services.Configuration;
-using RickAndMorty.Services.Data.Api;
 using RickAndMorty.Services.Data.Mock;
 
 namespace RickAndMorty
@@ -15,6 +14,8 @@ namespace RickAndMorty
             this.Bind<ICharacter>().To<Character>();
             this.Bind<IEpisode>().To<Episode>();
             this.Bind<ILocation>().To<Location>();
+            this.Bind<IQueryParser>().To<IQueryParser>();
+            this.Bind<IQueryEvaluator>().To<IQueryEvaluator>();
             this.Bind<IDataService>().To<RickAndMortyDataService_Mock>();
         }
     }

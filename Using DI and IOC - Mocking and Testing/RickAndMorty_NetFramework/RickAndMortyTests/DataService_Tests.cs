@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace RickAndMorty.Tests
+namespace RickAndMorty.Tests.DataService
 {
     namespace IOC
     {
@@ -68,7 +68,7 @@ namespace RickAndMorty.Tests
         {
             foreach (IDataService svc in _dataServices)
             {
-                string message = $"Testing When_GetCharacters_ShouldReturn_Characters with DataService {svc.GetType()}";
+                string message = $"Testing When_GetCharacters_ShouldReturn_Characters with IDataService {svc.GetType()}";
                 _ctx.WriteLine($"Start: {message}");
                 IEnumerable<ICharacter> characters = svc.GetAllCharacters();
                 Assert.IsNotNull(characters, $"Failed: {message}");
@@ -81,7 +81,7 @@ namespace RickAndMorty.Tests
         {
             foreach (IDataService svc in _dataServices)
             {
-                string message=$"Testing When_GetEpisodes_ShouldReturn_Episodes with DataService {svc.GetType()}";
+                string message=$"Testing When_GetEpisodes_ShouldReturn_Episodes with IDataService {svc.GetType()}";
                 _ctx.WriteLine($"Start: {message}");
                 IEnumerable<IEpisode> episodes = svc.GetAllEpisodes();
                 Assert.IsNotNull(episodes, $"Failed: {message}");
@@ -94,7 +94,7 @@ namespace RickAndMorty.Tests
         {
             foreach (IDataService svc in _dataServices)
             {
-                string message=$"TestingWhen_GetLocations_ShouldReturn_Locations with DataService {svc.GetType()}";
+                string message=$"TestingWhen_GetLocations_ShouldReturn_Locations with IDataService {svc.GetType()}";
                 _ctx.WriteLine($"Start: {message}");
                 IEnumerable<ILocation> locations = svc.GetAllLocations();
                 Assert.IsNotNull(locations, $"Failed: {message}");

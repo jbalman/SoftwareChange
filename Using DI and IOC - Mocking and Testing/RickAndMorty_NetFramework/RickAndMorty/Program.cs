@@ -14,6 +14,12 @@ namespace RickAndMorty
         {
             StandardKernel Kernel = new StandardKernel(new BindingModule());
             IDataService svc = Kernel.Get<IDataService>();
+            bool keepLooping= true;
+            while (keepLooping)
+            {
+                Console.WriteLine("Enter Query:");
+                string query = Console.ReadLine();
+            }
         }
     }
 }

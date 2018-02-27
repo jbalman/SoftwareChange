@@ -45,6 +45,8 @@
     <Compile Include="IEpisode.cs" />
     <Compile Include="ILocation.cs" />
     <Compile Include="IDataService.cs" />
+    <Compile Include="IQueryEvaluator.cs" />
+    <Compile Include="IQueryParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

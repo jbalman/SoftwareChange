@@ -65,7 +65,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RickAndMortyDataService_Tests.cs" />
+    <Compile Include="DataService_Tests.cs" />
+    <Compile Include="QueryParser_Tests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -75,6 +76,10 @@
     <ProjectReference Include="..\RickAndMorty.Contracts\RickAndMorty.Contracts.csproj">
       <Project>{6EEC5B7C-82DC-457B-9D9D-98B537E662ED}</Project>
       <Name>RickAndMorty.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RickAndMorty.Engines\RickAndMorty.Engines.csproj">
+      <Project>{F2454BBC-72BC-44A4-A7A6-590E43F3BFCC}</Project>
+      <Name>RickAndMorty.Engines</Name>
     </ProjectReference>
     <ProjectReference Include="..\RickAndMorty.Implementations\RickAndMorty.Implementations.csproj">
       <Project>{E03B5C13-817D-4510-8820-7E1524A61DA7}</Project>
