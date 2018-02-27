@@ -47,7 +47,6 @@ namespace RickAndMorty.Services.Data.Api.Client
             string nextUrl = url;
             while (!string.IsNullOrWhiteSpace(nextUrl))
             {
-                Console.WriteLine($"Geting {nextUrl}");
                 WebRequest req = WebRequest.Create(nextUrl);
                 req.Method = "GET";
                 WebResponse resp = req.GetResponse();

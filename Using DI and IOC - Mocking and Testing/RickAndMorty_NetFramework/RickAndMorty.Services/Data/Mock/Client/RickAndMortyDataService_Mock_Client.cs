@@ -1,5 +1,6 @@
 ﻿using RickAndMorty.Services.Data.Models;
 using System.Collections.Generic;
+using System.IO;
 
 namespace RickAndMorty.Services.Data.Mock.Client
 {
@@ -27,10 +28,11 @@ namespace RickAndMorty.Services.Data.Mock.Client
             return GetObjects<Episode>(episodes);
         }
 
-        private IEnumerable<T> GetObjects<T>(string fileName) 
+        private IEnumerable<T> GetObjects<T>(string fileName)
         {
             List<T> objects = new List<T>();
-
+            string json = File.ReadAllText(fileName);
+            objects = Newtonsoft.Json.JsonConvert.DeserializeObject<List<T>>(json);
             return objects;
         }
     }
